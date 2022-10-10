@@ -6,3 +6,4 @@ prod_lists=list(map(lambda x, y:x*y, list1, list2))
 tp=time.time()
 print(tp-to)
 list_time=tp-to
+print(list_time)
