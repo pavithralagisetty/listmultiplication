@@ -1,8 +1,11 @@
 import time
-list1=[i for i in range(1000000)]
-list2=[i for i in range(1000000)]
-to=time.time()
-prod_lists=list(map(lambda x, y:x*y, list1, list2))
-tp=time.time()
-print(tp-to)
-list_time=tp-to
+import numpy as np
+
+list1 = np.arange(1000000)
+list2 = np.arange(1000000)
+
+start_time = time.time()
+prod_lists = list1 * list2
+end_time = time.time()
+
+print(end_time - start_time)
